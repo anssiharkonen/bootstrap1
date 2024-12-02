@@ -7,6 +7,11 @@
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .accordion-body {
+            font-size: 0.9rem; /* Pienennetään fonttia */
+        }
+    </style>
 </head>
 <body class="d-flex flex-column" style="height: 100vh;">
     <!-- Header with Bootstrap Navbar -->
@@ -24,7 +29,7 @@
                         <li class="nav-item"><a class="nav-link active" href="tutkinnonosat.html">Tutkinnonosat</a></li>
                         <li class="nav-item"><a class="nav-link" href="kriteerit.html">Kriteerit</a></li>
                         <li class="nav-item"><a class="nav-link" href="arviointi.html">Arviointi</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="minusta.html">Tietoa minusta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="minusta.html">Tietoa minusta</a></li>
                     </ul>
                 </div>
             </div>
@@ -36,13 +41,142 @@
         <div class="text-center">
             <h1 class="mb-4">Tutkinnonosat</h1>
             <p class="lead">Tutkinnossa on useita osia, jotka kattavat eri osa-alueet TVT-alalta.</p>
-            <ul class="list-group">
-                <li class="list-group-item">Ohjelmointi ja ohjelmistokehitys</li>
-                <li class="list-group-item">Tietoverkot ja tietoturva</li>
-                <li class="list-group-item">Laite- ja järjestelmähallinta</li>
-                <li class="list-group-item">Käyttöjärjestelmät ja ohjelmistot</li>
-                <li class="list-group-item">Verkkopalvelut ja pilvipalvelut</li>
-            </ul>
+            
+            <!-- Tieto- ja viestintätekniikan perustehtävät -->
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Tieto- ja viestintätekniikan perustehtävät, 25 osp
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Opiskelija toimii tieto- ja viestintätekniikan työtehtävissä:
+                            <ul>
+                                <li>Toimii hyvällä palveluasenteella</li>
+                                <li>Palvelee sisäisiä tai ulkoisia asiakkaita</li>
+                                <li>Varmistaa asiakkaan tarpeen ja perustelee asiakkaalle ratkaisun</li>
+                                <li>Pyytää palautetta omasta toiminnasta</li>
+                                <li>Käyttää työpaikan viestintäkanavia ja ohjelmistoja</li>
+                            </ul>
+                            Opiskelija tekee tiedonhakua ja ratkaisee tieto- ja viestintätekniikan ongelmia:
+                            <ul>
+                                <li>Käyttää alan perussanastoa ja tuntee uusia trendejä</li>
+                                <li>Hyödyntää englanninkielistä materiaalia ongelmanratkaisussa</li>
+                                <li>Ratkaisee ongelmia hakemalla tietoa</li>
+                            </ul>
+                            Opiskelija käyttää tietoteknistä ympäristöä:
+                            <ul>
+                                <li>Käyttää työssä tarvittavia käyttöjärjestelmiä</li>
+                                <li>Jakaa ja ottaa käyttöön verkkoyhteyden eri päätelaitteilla ottaen huomioon tietoturvan</li>
+                                <li>Tuntee internetin ja koti- ja pienyrityksen verkon perusrakenteen</li>
+                                <li>Hallitsee ja suojaa koti- ja pienyrityksen tietoliikenne- ja oheislaitteita</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ohjelmointi -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Ohjelmointi, 45 osp
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Opiskelija käyttää ohjelmistokehitysympäristöä:
+                            <ul>
+                                <li>Käyttää ohjelmointieditoria tai kehitysympäristöä</li>
+                                <li>Etsii ja korjaa virheitä ohjelmakoodista</li>
+                                <li>Testaa ohjelman toimintoja</li>
+                            </ul>
+                            Opiskelija ohjelmoi:
+                            <ul>
+                                <li>Käyttää rakenteista ohjelmointia toteutuksissa</li>
+                                <li>Kirjoittaa ylläpidettävää ohjelmakoodia</li>
+                                <li>Tulkitsee suunnitelmia ja toteuttaa käyttöliittymän tai sen osia</li>
+                                <li>Tulkitsee suunnitelmia ja toteuttaa ohjelmiston toimintoja</li>
+                            </ul>
+                            Opiskelija toimii ohjelmistokehitystiimin jäsenenä:
+                            <ul>
+                                <li>Sopii tehtävistä tiimin muiden jäsenten kanssa</li>
+                                <li>Etsii ratkaisuvaihtoehtoja ja ratkoo ongelmia yhdessä tiimin kanssa</li>
+                                <li>Arvioi ratkaisujen toimivuuden yhdessä tiimin kanssa</li>
+                                <li>Arvioi omaa toimintaa tiimin jäsenenä</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ohjelmistokehittäjänä toimiminen -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Ohjelmistokehittäjänä toimiminen, 45 osp
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Opiskelija kommunikoi asiakkaan kanssa:
+                            <ul>
+                                <li>Selvittää kehitystiimin kanssa asiakkaan tarpeet</li>
+                                <li>Viestii tekniset asiat asiakaslähtöisesti</li>
+                                <li>Osallistuu version katselmointiin</li>
+                            </ul>
+                            Opiskelija suunnittelee ohjelmiston toteutuksen:
+                            <ul>
+                                <li>Asettaa kehitystiimin kanssa toteutettavat toiminnot tärkeysjärjestykseen</li>
+                                <li>Jaa kehitystiimin kanssa toteutettavat toiminnot tehtäviksi</li>
+                                <li>Suunnittelee ja arvioi kehitystiimin kanssa tehtävien toteuttamista</li>
+                            </ul>
+                            Opiskelija kehittää ohjelmiston toimintalogiikkaa ja tietovarastoyhteyksiä:
+                            <ul>
+                                <li>Kehittää ohjelmiston toimintalogiikkaa</li>
+                                <li>Valitsee ohjelmistoon sopivan tietovaraston</li>
+                                <li>Toteuttaa yhteyden tietovarastoon</li>
+                                <li>Hyödyntää rajapintoja ja käsittelee tietoa</li>
+                                <li>Arvioi ohjelmiston tietoturvaa</li>
+                            </ul>
+                            Opiskelija versioi ja julkaisee ohjelman:
+                            <ul>
+                                <li>Käyttää versionhallintaa</li>
+                                <li>Liittää ohjelman osan olemassa olevaan versioon</li>
+                                <li>Julkaisee ohjelman tuotantoympäristöön</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Verkkopalvelun tekninen toteuttaminen -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Verkkopalvelun tekninen toteuttaminen, 15 osp
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Opiskelija suunnittelee verkkopalvelun:
+                            <ul>
+                                <li>Suunnittelee verkkopalvelun rakennekaavion</li>
+                                <li>Suunnittelee palvelun käytettävyyttä ja skaalautuvuutta</li>
+                            </ul>
+                            Opiskelija toteuttaa verkkopalvelun:
+                            <ul>
+                                <li>Valitsee oikeat teknologiat verkkopalvelun toteutukseen</li>
+                                <li>Toteuttaa palvelun käyttöliittymän ja toiminnallisuudet</li>
+                            </ul>
+                            Opiskelija julkaisee verkkopalvelun:
+                            <ul>
+                                <li>Suorittaa palvelun virittelyn ja julkaisee sen tuotantoympäristöön</li>
+                                <li>Varmistaa palvelun toimivuuden ja käytettävyyden</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     
@@ -55,6 +189,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+               
+
+
 
 
 
